@@ -27,5 +27,7 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 @import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @import "../css/animate.min.scss";
 @import "../css/style.scss";

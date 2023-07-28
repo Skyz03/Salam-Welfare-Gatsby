@@ -2,7 +2,16 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Slider from "react-slick";
+
 const IndexPage = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
   return (
     <Layout>
 
@@ -69,6 +78,8 @@ const IndexPage = () => {
       </div>
       {/* Car End  */}
 
+
+
       {/* About Start  */}
       <div className="container-xxl py-5" id="about">
         <div className="container">
@@ -125,136 +136,42 @@ const IndexPage = () => {
             <h1 className="display-6 mb-5">Learn More What We Do And Get Involved</h1>
           </div>
           <div className="row g-4 justify-content-center">
-            <div className="owl-carousel owl-theme">
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-headset fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Family Support: Changing Lives</h4>
-                <p className="mb-4">Providing comprehensive assistance to needy families, improving their living
-                  conditions, and empowering them for a
-                  brighter future.</p>
-
+            <Slider {...settings}>
+              <div>
+                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
+                  <i class="fas fa-headset fa-5x mb-3 text-primary"></i>
+                  <h4 class="mb-3">Family Support: Changing Lives</h4>
+                  <p class="mb-4">Providing comprehensive assistance to needy families, improving their living
+                    conditions, and empowering them for a
+                    brighter future.</p>
+                </div>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-home fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Safe Homes: Building Hope</h4>
-                <p className="mb-4">Constructing and renovating homes for underprivileged families, creating safe
-                  and nurturing environments.</p>
-
+              <div>
+                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
+                  <i class="fas fa-home fa-5x mb-3 text-primary"></i>
+                  <h4 class="mb-3">Safe Homes: Building Hope</h4>
+                  <p class="mb-4">Constructing and renovating homes for underprivileged families, creating safe
+                    and nurturing environments.</p>
+                </div>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-hospital fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Healing Hands: Hospital Aid</h4>
-                <p className="mb-4">Supporting patients in hospitals through financial aid and emotional care,
-                  ensuring access to necessary treatment.</p>
-
+              <div>
+                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
+                  <i class="fas fa-hospital fa-5x mb-3 text-primary"></i>
+                  <h4 class="mb-3">Healing Hands: Hospital Aid</h4>
+                  <p class="mb-4">Supporting patients in hospitals through financial aid and emotional care,
+                    ensuring access to necessary treatment.</p>
+                </div>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-user-graduate fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Education for All: Empowering Minds</h4>
-                <p className="mb-4">Enabling underprivileged students to continue their studies through scholarships
-                  and educational support.</p>
-
+              <div>
+                <h3>4</h3>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-user-plus fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Love Bonds: Marriage Assistance</h4>
-                <p className="mb-4">Helping couples in need with financial and logistical support to celebrate their
-                  special day.</p>
-
+              <div>
+                <h3>5</h3>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-mosque fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Restoring Faith: Sacred Spaces</h4>
-                <p className="mb-4">Building and restoring mosques and maintaining cemeteries to preserve our
-                  religious heritage.</p>
-
+              <div>
+                <h3>6</h3>
               </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-child fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Bright Futures: Supporting Orphans</h4>
-                <p className="mb-4">Sponsoring orphans and providing them with comprehensive support for a brighter
-                  future.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-donate fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Seasons of Giving: Sharing Joy</h4>
-                <p className="mb-4">Conducting charitable projects such as school bag distribution, Iftar meals, Eid
-                  clothing, and winter clothing drives.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-first-aid fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Rebuilding Lives: Emergency Relief</h4>
-                <p className="mb-4">Providing immediate aid to individuals affected by accidents or disasters,
-                  helping them rebuild their lives.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-running fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Skills for Success: Vocational Training</h4>
-                <p className="mb-4">Empowering young men and women through vocational training, equipping them with
-                  valuable skills for employment.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-campground fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Healthcare on the Move: Medical Camps</h4>
-                <p className="mb-4">Bringing essential healthcare services to underserved areas through mobile
-                  medical camps.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-water fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Water for Life: Wells of Hope</h4>
-                <p className="mb-4">Drilling wells to provide clean and sustainable water sources to communities in
-                  need.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-chalkboard-teacher fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Inspiring Speakers: Preacher Training</h4>
-                <p className="mb-4">Training individuals to become effective speakers and preachers, empowering them
-                  to inspire others.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-book-reader fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Guiding Voices: Empowering Preachers</h4>
-                <p className="mb-4">Nurturing and supporting preachers to spread messages of peace, love, and unity.
-                </p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-university fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Education for Tomorrow: Modern Schools</h4>
-                <p className="mb-4">Building modern schools that provide quality education combined with moral
-                  values.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-female fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Empowering Minds: Girls' Institutes</h4>
-                <p className="mb-4">Creating religious institutes exclusively for girls, empowering them with
-                  knowledge and life skills.</p>
-
-              </div>
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-seedling fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Acts of Kindness: Spreading Goodness</h4>
-                <p className="mb-4">Undertaking various charitable initiatives to make a positive impact and spread
-                  kindness in our community.</p>
-
-              </div>
-
-              <div className="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                <i className="fas fa-quran fa-5x mb-3 text-primary"></i>
-                <h4 className="mb-3">Memorize to Illuminate: Quran Centers</h4>
-                <p className="mb-4">Establishing centers for memorizing the Holy Quran, fostering a deep connection
-                  with spirituality.</p>
-
-              </div>
-            </div>
+            </Slider>
           </div>
         </div>
       </div>
