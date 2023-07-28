@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import WhatWeDo from "../components/WhatWeDo";
 import { StaticImage } from "gatsby-plugin-image"
 
 import Slider from "react-slick";
@@ -138,38 +139,22 @@ const IndexPage = () => {
           <div className="row g-4 justify-content-center">
             <Slider {...settings}>
               <div>
-                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                  <i class="fas fa-headset fa-5x mb-3 text-primary"></i>
-                  <h4 class="mb-3">Family Support: Changing Lives</h4>
-                  <p class="mb-4">Providing comprehensive assistance to needy families, improving their living
-                    conditions, and empowering them for a
-                    brighter future.</p>
-                </div>
+                <WhatWeDo />
               </div>
               <div>
-                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                  <i class="fas fa-home fa-5x mb-3 text-primary"></i>
-                  <h4 class="mb-3">Safe Homes: Building Hope</h4>
-                  <p class="mb-4">Constructing and renovating homes for underprivileged families, creating safe
-                    and nurturing environments.</p>
-                </div>
+                <WhatWeDo />
               </div>
               <div>
-                <div class="service-item bg-white text-center h-100 p-4 m-4 p-xl-5">
-                  <i class="fas fa-hospital fa-5x mb-3 text-primary"></i>
-                  <h4 class="mb-3">Healing Hands: Hospital Aid</h4>
-                  <p class="mb-4">Supporting patients in hospitals through financial aid and emotional care,
-                    ensuring access to necessary treatment.</p>
-                </div>
+                <WhatWeDo />
               </div>
               <div>
-                <h3>4</h3>
+                <WhatWeDo />
               </div>
               <div>
-                <h3>5</h3>
+                <WhatWeDo />
               </div>
               <div>
-                <h3>6</h3>
+                <WhatWeDo />
               </div>
             </Slider>
           </div>
