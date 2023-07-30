@@ -3,16 +3,9 @@ import Layout from "../components/layout"
 import WhatWeDo from "../components/WhatWeDo";
 import { StaticImage } from "gatsby-plugin-image"
 
-import Slider from "react-slick";
 
 const IndexPage = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+
   return (
     <Layout>
 
@@ -137,11 +130,7 @@ const IndexPage = () => {
             <h1 className="display-6 mb-5">Learn More What We Do And Get Involved</h1>
           </div>
           <div className="row g-4 justify-content-center">
-            <Slider {...settings}>
-              <>
-                <WhatWeDo />
-              </>
-            </Slider>
+            <WhatWeDo />
           </div>
         </div>
       </div>

@@ -474,3 +474,7 @@
 .footer .copyright a:hover {
   color: var(--primary);
 }
+
+.slick-active > div {
+  margin: 0.75rem 0.75rem;
+}
